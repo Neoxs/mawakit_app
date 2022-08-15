@@ -84,6 +84,7 @@ function App() {
               Select date
             </label>
             <input
+              data-testid="date-input"
               id="date"
               type="date"
               className="search__date"
@@ -97,6 +98,7 @@ function App() {
             </label>
             {/* React select input */}
             <Select
+              data-testid="country-input"
               id="country"
               className="search__country"
               onChange={handleSelect}
@@ -104,6 +106,7 @@ function App() {
             />
             {/* React-Select are cool, unfortunaly you can't make the input required, therefore i am using this hidden input as alternative solution for this issue (https://github.com/JedWatson/react-select/issues/3140) */}
             <input
+              data-testid="country-input"
               type="text"
               onChange={() => false}
               autoComplete="off"
@@ -112,7 +115,12 @@ function App() {
               required
             />
           </div>
-          <button className="search__btn" type="submit" disabled={data.loading}>
+          <button
+            data-testid="btn"
+            className="search__btn"
+            type="submit"
+            disabled={data.loading}
+          >
             {data.loading ? "Loading..." : "Show"}
           </button>
         </form>
@@ -120,6 +128,7 @@ function App() {
         <div className="result">
           {!data.synched && (
             <img
+              role="no_result_illustration"
               className="illustration-lost"
               src="/img/lost.svg"
               alt="illustration"
@@ -139,7 +148,9 @@ function App() {
       </div>
       <div className="side_two">
         <div className="header">
-          <h1 className="logo">Mawakit</h1>
+          <h1 role="logo" className="logo">
+            Mawakit
+          </h1>
           <p className="subtitle">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
             ullam ratione unde enim non similique minima nihil laudantium modi
