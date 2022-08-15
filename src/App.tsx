@@ -128,7 +128,7 @@ function App() {
         <div className="result">
           {!data.synched && (
             <img
-              role="no_result_illustration"
+              data-testid="no_result_illustration"
               className="illustration-lost"
               src="/img/lost.svg"
               alt="illustration"
@@ -148,7 +148,7 @@ function App() {
       </div>
       <div className="side_two">
         <div className="header">
-          <h1 role="logo" className="logo">
+          <h1 data-testid="logo" className="logo">
             Mawakit
           </h1>
           <p className="subtitle">

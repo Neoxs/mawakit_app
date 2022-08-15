@@ -2,14 +2,13 @@ import React from "react";
 import axios from "axios";
 import { render, screen } from "@testing-library/react";
 import App from "./App";
-import mockAxios from "./mocks/mockAxios";
 
 jest.mock("axios");
 
 test("renders without errors", () => {
   render(<App />);
-  expect(screen.getByRole("logo")).toHaveTextContent(/Mawakit/);
-  expect(screen.getByRole("no_result_illustration")).toBeInTheDocument();
+  expect(screen.getByTestId("logo")).toHaveTextContent(/Mawakit/);
+  expect(screen.getByTestId("no_result_illustration")).toBeInTheDocument();
   expect(screen.getByTestId("country-input")).toBeInTheDocument();
   expect(screen.getByTestId("date-input")).toBeInTheDocument();
   expect(screen.getByTestId("btn")).toBeInTheDocument();
