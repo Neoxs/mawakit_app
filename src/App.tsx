@@ -128,10 +128,10 @@ function App() {
           {data.synched && (
             <>
               <span className="result__sunrise">
-                Sunrise is at: {data.sunrise} ☀️
+                Sunrise is at: {data.sunrise} GMT ☀️
               </span>
               <span className="result__sunset">
-                Sunset is at: {data.sunset} 🌙
+                Sunset is at: {data.sunset} GMT 🌙
               </span>
             </>
           )}

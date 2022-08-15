@@ -12,6 +12,10 @@
   height: 100%;
   flex-basis: 40%;
   text-align: left;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-basis: 100%;
+  }
 }
 
 .side_two {
@@ -22,4 +26,8 @@
   background-color: $color-grey-light-3;
   padding: 5rem;
   float: right;
+
+  @media only screen and (max-width: $bp-large) {
+    display: none;
+  }
 }
