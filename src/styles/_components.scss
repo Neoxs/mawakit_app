@@ -1,0 +1,98 @@
+////////////////////////////////////////
+// HEADER
+.header {
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.logo {
+  font-size: 5rem;
+  font-weight: 700;
+  color: $color-primary;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: centers;
+}
+
+.illustration {
+  width: 55rem;
+}
+
+////////////////////////////////////////
+// SEARCH
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 8rem 0rem 2rem;
+  //   background-color: $color-primary;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: none;
+
+  &__date {
+    width: 35rem;
+    height: 4rem;
+    font-family: inherit;
+    border-radius: 0.5rem;
+    border: 1px solid hsl(0, 0%, 80%);
+    padding: 0.5rem;
+  }
+
+  &__country {
+    width: 35rem;
+    font-size: 1.5rem;
+  }
+
+  &__btn {
+    padding: 1.2rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background: $color-primary;
+    width: 15rem;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+  
+    &-label {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $color-grey-dark-2;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+// ////////////////////////////////////////
+// // RESULT
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: $color-primary;
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0 auto;
+  border-radius: 2rem;
+  width: 90%;
+  margin-top: 4rem;
+}
+
+.illustration-lost {
+  width: 20rem;
+}

@@ -1,0 +1,25 @@
+//This file contains the styles for the main layouts
+
+// CONATAINER
+.App {
+  margin: 1;
+  height: 100vh;
+  display: flex;
+}
+
+.side_one {
+  padding: 3rem 5rem;
+  height: 100%;
+  flex-basis: 40%;
+  text-align: left;
+}
+
+.side_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 60%;
+  background-color: $color-grey-light-3;
+  padding: 5rem;
+  float: right;
+}
